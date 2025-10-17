@@ -1,0 +1,88 @@
+body { 
+/* Darker Blue Gradient */
+    background: linear-gradient(to bottom right, #001f40, #003366); /* Dark Navy Blue to Medium Blue */
+    
+    font-family: Arial, sans-serif; 
+    max-width: 600px; 
+    margin: 30px auto; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 { 
+    text-align: center; 
+    /* Bright Blue for contrast */
+    color: #00bfff; 
+    margin-bottom: 25px;
+    /* Optional: Add a text shadow to make it stand out even more against the dark background */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+}
+
+th, td { 
+    padding: 10px; 
+    text-align: left; 
+    border-bottom: 1px solid #eee; 
+}
+
+th { 
+    background-color: #f5f5f5; 
+    color: #333;
+}
+
+input[type="number"], select { 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    width: 90%; 
+    box-sizing: border-box; 
+    font-size: 1em;
+}
+
+.actions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button { 
+    padding: 10px 18px; 
+    background-color: #004d99; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover { 
+    background-color: #003366; 
+}
+
+/* Style for the small delete button */
+td:last-child button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+}
+
+td:last-child button:hover {
+    background-color: #c82333;
+}
+
+#result { 
+    margin-top: 20px; 
+    font-size: 1.4em; 
+    font-weight: bold; 
+    text-align: center; 
+    padding: 15px; 
+    border: 3px solid #004d99; 
+    border-radius: 6px; 
+    background-color: #e6f0ff;
+}
