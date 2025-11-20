@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semester GPA Calculator</title>
+    <title>Kalkulator IP Semester</title>
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
 
-    <h2>Semester GPA Calculator 🧪</h2>
+    <h2>Kalkulator IP Semester</h2>
 
     <table id="courseTable">
         <thead>
             <tr>
-                <th>Grade</th>
-                <th>Credit Hours</th>
+                <th>Indeks</th>
+                <th>SKS</th>
                 <th></th> </tr>
         </thead>
         <tbody>
@@ -22,13 +22,17 @@
     </table>
 
     <div class="actions">
-        <button onclick="addCourse()">Add Course</button>
-        <button onclick="calculateGPA()">Calculate GPA</button>
-        <button onclick="clearCourses()">Clear All</button>
+        <button onclick="addCourse()">Tambah Matkul</button>
+        <button onclick="calculateGPA()" id="buttonHasil">Hitung IP</button>
+        <button onclick="clearCourses()">Hapus Semua</button>
     </div>
 
     <div id="result">
-        Your Semester GPA: 0.00
+        IP Anda Semester Ini: 0.00
+    </div>
+
+    <div id="toIPK">
+        Ingin menghitung IPK (Total) Anda? <a href="gpa-ipk.html" class="action-link">Klik di sini!</a>
     </div>
 
     <script src="script.js"></script> 
