@@ -1,0 +1,106 @@
+{
+  "major": "Chemistry",
+  "tpb_options": {
+    "2022_2023": {
+      "1": [
+        { "code": "MA1101", "name": "Matematika IA", "sks": 4, "type": "mandatory" },
+        { "code": "FI1101", "name": "Fisika Dasar IA", "sks": 4, "type": "mandatory" },
+        { "code": "KI1101", "name": "Kimia Dasar IA", "sks": 3, "type": "mandatory" },
+        { "code": "KU1011", "name": "Tata Tulis Karya Ilmiah", "sks": 2, "type": "mandatory" },
+        { "code": "KU1160", "name": "Pengantar Keilmuan MIPA", "sks": 2, "type": "mandatory" },
+        { "code": "KU1102", "name": "Pengenalan Komputasi", "sks": 3, "type": "mandatory" }
+      ],
+      "2": [
+        { "code": "MA1201", "name": "Matematika IIA", "sks": 4, "type": "mandatory" },
+        { "code": "FI1201", "name": "Fisika Dasar IIA", "sks": 4, "type": "mandatory" },
+        { "code": "KI1201", "name": "Kimia Dasar IIA", "sks": 3, "type": "mandatory" },
+        { "code": "KU1001", "name": "Olah Raga", "sks": 2, "type": "mandatory" },
+        { "code": "KU1202", "name": "Pengantar Rekayasa dan Desain", "sks": 3, "type": "mandatory" },
+        { "code": "KU1024", "name": "Bahasa Inggris", "sks": 2, "type": "mandatory" }
+      ]
+    },
+    "2024": {
+      "1": [
+        { "code": "MA1101", "name": "Matematika I", "sks": 4, "type": "mandatory" },
+        { "code": "FI1101", "name": "Fisika Dasar I", "sks": 3, "type": "mandatory" },
+        { "code": "KI1101", "name": "Kimia Dasar I", "sks": 3, "type": "mandatory" },
+        { "code": "WI1101", "name": "Pancasila", "sks": 2, "type": "mandatory" },
+        { "code": "WI1102", "name": "Berpikir Komputasional", "sks": 2, "type": "mandatory" },
+        { "code": "WI1103", "name": "Pengantar Prinsip Keberlanjutan", "sks": 2, "type": "mandatory" },
+        { "code": "WI1111", "name": "Laboratorium Fisika Dasar", "sks": 1, "type": "mandatory" },
+        { "code": "WI1112", "name": "Laboratorium Kimia Dasar", "sks": 1, "type": "mandatory" }
+      ],
+      "2": [
+        { "code": "FI1201", "name": "Fisika Dasar IIA", "sks": 3, "type": "mandatory" },
+        { "code": "KI1201", "name": "Kimia Dasar 2A", "sks": 3, "type": "mandatory" },
+        { "code": "WI2005", "name": "Bahasa Indonesia", "sks": 2, "type": "mandatory" },
+        { "code": "WI2002", "name": "Literasi Data dan Inteligensi Artifisial", "sks": 2, "type": "mandatory" },
+        { "code": "MA1201", "name": "Matematika IIA (Sains dan Rekayasa)", "sks": 4, "type": "mandatory" },
+        { "code": "WI2001", "name": "Pengenalan Rekayasa dan Desain", "sks": 3, "type": "mandatory" },
+        { "code": "FI1204", "name": "Laboratorium Fisika Dasar II", "sks": 1, "type": "mandatory" }
+      ]
+    }
+  },
+  "major_curriculum": [
+    {
+      "semester": 3,
+      "courses": [
+        { "code": "KI2121", "name": "Dasar-dasar Kimia Analitik", "sks": 3, "type": "mandatory" },
+        { "code": "KI2122", "name": "Praktikum Kimia Analitik", "sks": 2, "type": "mandatory" },
+        { "code": "KI2141", "name": "Struktur dan Ikatan Kimia", "sks": 4, "type": "mandatory" },
+        { "code": "KI2151", "name": "Kimia Organik I", "sks": 4, "type": "mandatory" },
+        { "code": "MA2071", "name": "Matematika Sains", "sks": 3, "type": "mandatory" },
+        { "code": "WI201X", "name": "Agama", "sks": 2, "type": "mandatory" },
+        { "code": "WI2006", "name": "Kewarganegaraan", "sks": 2, "type": "mandatory" }
+      ]
+    },
+    {
+      "semester": 4,
+      "courses": [
+        { "code": "KI2221", "name": "Cara-Cara Pemisahan dan Elektrometri", "sks": 4, "type": "mandatory" },
+        { "code": "KI2231", "name": "Struktur dan Kereaktifan Anorganik", "sks": 3, "type": "mandatory" },
+        { "code": "KI2241", "name": "Energetika Kimia", "sks": 4, "type": "mandatory" },
+        { "code": "KI2251", "name": "Kimia Organik II", "sks": 3, "type": "mandatory" },
+        { "code": "KI2252", "name": "Praktikum Kimia Organik", "sks": 2, "type": "mandatory" },
+        { "code": "KI2261", "name": "Dasar-dasar Kimia Hayati", "sks": 2, "type": "mandatory" },
+        { "code": "WI2004", "name": "Bahasa Inggris", "sks": 2, "type": "mandatory" }
+      ]
+    },
+    {
+      "semester": 5,
+      "courses": [
+        { "code": "KI3121", "name": "Analisis Spektrometri", "sks": 4, "type": "mandatory" },
+        { "code": "KI3131", "name": "Kimia Unsur Golongan Utama", "sks": 3, "type": "mandatory" },
+        { "code": "KI3141", "name": "Dinamika Kimia", "sks": 4, "type": "mandatory" },
+        { "code": "KI3151", "name": "Sintesis Organik", "sks": 3, "type": "mandatory" },
+        { "code": "KI3161", "name": "Struktur dan Fungsi Biomolekul", "sks": 2, "type": "mandatory" },
+        { "code": "KI3162", "name": "Praktikum Struktur dan Fungsi Biomolekul", "sks": 1, "type": "mandatory" }
+      ]
+    },
+    {
+      "semester": 6,
+      "courses": [
+        { "code": "KI3012", "name": "Rancangan Penelitian", "sks": 2, "type": "mandatory" },
+        { "code": "KI3212", "name": "Elusidasi Struktur", "sks": 3, "type": "mandatory" },
+        { "code": "KI3231", "name": "Logam Transisi dan Kimia Koordinasi", "sks": 3, "type": "mandatory" },
+        { "code": "KI3261", "name": "Metabolisme dan Informasi Genetik", "sks": 3, "type": "mandatory" },
+        { "code": "KI3262", "name": "Praktikum Metabolisme dan Informasi Genetika", "sks": 1, "type": "mandatory" },
+        { "code": "WI2003", "name": "Olah Raga", "sks": 1, "type": "mandatory" },
+        { "code": "WI2023", "name": "Manajemen Bisnis dan Kewirausahaan", "sks": 2, "type": "mandatory" }
+      ]
+    },
+    {
+      "semester": 7,
+      "courses": [
+        { "code": "KI4091", "name": "Tugas Akhir I", "sks": 4, "type": "mandatory" }
+      ]
+    },
+    {
+      "semester": 8,
+      "courses": [
+        { "code": "KI4092", "name": "Tugas Akhir II", "sks": 4, "type": "mandatory" },
+        { "code": "KI4093", "name": "Seminar Tugas Akhir dan Sidang Sarjana", "sks": 1, "type": "mandatory" }
+      ]
+    }
+  ]
+}
