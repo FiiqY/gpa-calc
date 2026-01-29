@@ -1,25 +1,20 @@
 body { 
-    /* Darker Blue Gradient */
-    background: linear-gradient(to bottom right, #001f40, #003366); /* Dark Navy Blue to Medium Blue */
-    
+    background: linear-gradient(to bottom right, #001f40, #003366); 
     font-family: Arial, sans-serif; 
     max-width: 600px; 
     margin: 30px auto; 
     padding: 20px; 
-    /* Changed border and box-shadow to fit the dark theme better */
     border: 1px solid #004d99; 
     border-radius: 8px; 
-    box-shadow: 0 8px 16px rgba(0,0,0,0.5); /* Stronger shadow for depth */
-    background-color: #00264d; /* Base color for the container */
-    color: #f5f5f5; /* Light text color */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5); 
+    background-color: #00264d; 
+    color: #f5f5f5; 
 }
 
 h2 { 
     text-align: center; 
-    /* Bright Blue for contrast */
     color: #00bfff; 
     margin-bottom: 25px;
-    /* Optional: Add a text shadow to make it stand out even more against the dark background */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -27,31 +22,27 @@ table {
     width: 100%; 
     border-collapse: collapse; 
     margin-bottom: 20px; 
-    /* Use a light color for the table border in a dark container */
     border: 1px solid #004d99; 
 }
 
 th, td { 
     padding: 10px; 
     text-align: left; 
-    /* Light border line for contrast */
     border-bottom: 1px solid #004d99; 
 }
 
 th { 
-    background-color: #004d99; /* Darker blue header */
-    color: #ffffff; /* White text */
+    background-color: #004d99; 
+    color: #ffffff; 
 }
 
-/* Ensure row text is visible */
 td {
-    background-color: #003366; /* Slightly lighter row background */
+    background-color: #003366; 
     color: #f5f5f5;
 }
 
 input[type="number"], select { 
     padding: 8px; 
-    /* Adjusted for dark mode */
     border: 1px solid #00bfff; 
     background-color: #001f40;
     color: #ffffff;
@@ -68,7 +59,7 @@ input[type="number"], select {
 
 button { 
     padding: 10px 18px; 
-    background-color: #00bfff; /* Primary action button: Bright Blue */
+    background-color: #00bfff; 
     color: black; 
     font-weight: bold;
     border: none; 
@@ -84,7 +75,7 @@ button:hover {
 
 #buttonHasil {
     padding: 10px 18px; 
-    background-color: #8b00ee; /* Primary action button: Bright Blue */
+    background-color: #8b00ee; 
     color: rgb(255, 255, 255); 
     font-weight: bold;
     border: none; 
@@ -98,9 +89,8 @@ button:hover {
     background-color: #5f02a1; 
 }
 
-/* Style for the small delete button */
 td:last-child button {
-    background-color: #dc3545; /* Red for deletion */
+    background-color: #dc3545; 
     padding: 5px 10px;
     color: white;
 }
@@ -116,61 +106,45 @@ td:last-child button:hover {
     font-weight: bold; 
     text-align: center; 
     padding: 15px; 
-    border: 3px solid #00bfff; /* Bright blue border */
+    border: 3px solid #00bfff; 
     border-radius: 6px; 
-    background-color: #e6f0ff; /* Light background for contrast */
-    color: #001f40; /* Dark text for readability */
+    background-color: #e6f0ff; 
+    color: #001f40; 
 }
 
-/* ------------------------------------------- */
-/* ANIMATION CLASSES START           */
-/* ------------------------------------------- */
-
-/* 1. Base transition for smooth property changes on table rows */
 #courseTable tbody tr {
-    /* Apply transition to the animating properties */
     transition: opacity 0.3s ease-out, transform 0.3s ease-out, background-color 0.3s;
-    /* Important for allowing the content to scale */
     display: table-row; 
 }
 
-/* 2. Style for "Popping In" (Adding a row) */
-/* The initial state when the row is first inserted (has .new-row class) */
 #courseTable tbody tr.new-row {
     opacity: 0;
-    transform: scale(0.95); /* Starts slightly smaller */
+    transform: scale(0.95); 
 }
-/* When the .new-row class is removed by JS, it transitions back to the default state (opacity: 1, scale: 1). */
 
-
-/* 3. Style for "Popping Out" (Removing a row) */
-/* Keyframes define the animation sequence */
 @keyframes popOut {
     0% { 
         opacity: 1; 
         transform: scale(1);
-        padding: 10px; /* Start padding */
-        height: auto; /* Start height */
+        padding: 10px; 
+        height: auto; 
     }
     50% { 
         opacity: 0.5; 
-        transform: scale(0.9); /* Mid-point shrink */
+        transform: scale(0.9); 
     }
     100% { 
         opacity: 0; 
-        transform: scale(0); /* Fully shrink/disappear */
-        height: 0; /* Collapse height */
-        padding: 0; /* Remove padding */
+        transform: scale(0); 
+        height: 0; 
+        padding: 0; 
         margin: 0;
         border: none;
     }
 }
 
-/* Apply the animation when the .removing class is added by JS */
 #courseTable tbody tr.removing {
-    /* Play the animation and keep the final state */
     animation: popOut 0.4s forwards;
-    /* Hide overflowing content during collapse */
     overflow: hidden; 
 }
 
@@ -180,5 +154,5 @@ td:last-child button:hover {
     font-weight: bold; 
     text-align: center; 
     padding: 15px; 
-    color: #ffffff; /* Dark text for readability */
+    color: #ffffff; 
 }

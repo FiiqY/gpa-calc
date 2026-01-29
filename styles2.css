@@ -1,0 +1,224 @@
+/* --- Global Reset & Background --- */
+body { 
+    background: linear-gradient(135deg, #001f40, #000d1a); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #f5f5f5; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(0, 38, 77, 0.8); 
+    padding: 30px; 
+    border: 1px solid #004d99; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6); 
+}
+
+h2 { 
+    text-align: center; 
+    color: #00bfff; 
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Controls Section --- */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+select, input[type="text"], input[type="number"] { 
+    padding: 10px; 
+    border: 1px solid #00bfff; 
+    background-color: #001f40;
+    color: #ffffff;
+    border-radius: 6px; 
+    font-size: 0.9em;
+}
+
+input[type="text"] { width: 140px; } /* For Course Code */
+input[type="number"] { width: 60px; } /* For SKS */
+
+/* --- Table Styles --- */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 25px; 
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+th, td { 
+    padding: 12px; 
+    text-align: left; 
+    border-bottom: 1px solid #004d99; 
+}
+
+th { 
+    background-color: #004d99; 
+    color: #00bfff;
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+td { background-color: rgba(0, 51, 102, 0.5); }
+
+/* The bottom dashboard container */
+.overall-result {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(0, 15, 35, 0.9); /* Darker blue to contrast with tables */
+    border: 2px solid #00bfff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center them horizontally */
+    gap: 15px;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* The Big White Button */
+.btn-calc-total {
+    background-color: #ffffff;
+    color: #001f40; /* Dark blue text for readability */
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px; /* Rounded pill shape */
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-calc-total:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05); /* Slight grow effect */
+    box-shadow: 0 6px 20px rgba(0, 191, 255, 0.4);
+}
+
+/* Style for the IPK Total text */
+#totalResult {
+    margin: 10px 0 5px 0;
+    font-size: 2.5rem; /* Big and bold */
+    color: #00bfff;
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+}
+
+/* SKS Lulus text */
+#totalSKSCount {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #a0d8ef;
+}
+
+/* Update your table style */
+.courseTable {
+    width: 100%;
+    table-layout: fixed; /* This is crucial for controlling column widths */
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+/* Force specific widths on the headers */
+.courseTable th:nth-child(1) { width: 15%; } /* Kode */
+.courseTable th:nth-child(2) { width: 45%; } /* Nama Matkul - The Long One */
+.courseTable th:nth-child(3) { width: 12%; } /* SKS */
+.courseTable th:nth-child(4) { width: 20%; } /* Indeks */
+.courseTable th:nth-child(5) { width: 8%; }  /* X Button */
+
+/* Ensure inputs fill the allocated space without overflow */
+.courseTable input, 
+.courseTable select {
+    width: 100%;
+    box-sizing: border-box; /* Includes padding in the width calculation */
+    padding: 8px;
+    background-color: #001f40;
+    border: 1px solid #00bfff;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Optional: Center align the smaller columns for better look */
+.courseTable td:nth-child(1) input,
+.courseTable td:nth-child(3) input,
+.courseTable td:nth-child(4) select {
+    text-align: center;
+}
+
+/* --- Buttons --- */
+button { 
+    padding: 10px 20px; 
+    background-color: #00bfff; 
+    color: #001f40; 
+    font-weight: bold;
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+button:hover { 
+    background-color: #0099e6; 
+    transform: translateY(-2px);
+}
+
+.btn-clear { background-color: #6c757d; color: white; }
+.btn-clear:hover { background-color: #5a6268; }
+
+.btn-calc {
+    background-color: #8b00ee; 
+    color: white;
+    width: 100%;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.btn-calc:hover { background-color: #6a00b8; }
+
+.btn-delete {
+    background-color: #dc3545; 
+    color: white;
+    padding: 5px 12px;
+}
+
+/* --- Result Section --- */
+#result { 
+    margin-top: 20px; 
+    font-size: 1.4em; 
+    text-align: center; 
+    padding: 20px; 
+    border: 2px solid #00bfff; 
+    border-radius: 10px; 
+    background-color: rgba(0, 191, 255, 0.1); /* Transparent light blue */
+    color: #00bfff; 
+}
+
+/* --- Animations --- */
+.new-row {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.removing {
+    animation: popOut 0.4s forwards;
+}
+
+@keyframes popOut {
+    to { opacity: 0; transform: scale(0.8); }
+}

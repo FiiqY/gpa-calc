@@ -1,7 +1,37 @@
 <!DOCTYPE html>
-<html lang="en"?>
+<html lang="id">
 <head>
-    Hello! test aja, belum selesai ya maaf hehe
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator IPK - Kimia ITB</title>
+    <link rel="stylesheet" href="styles2.css"> 
 </head>
 
+<body>
+
+    <div class="container">
+        <h2>Kalkulator IPK Kimia ITB</h2>
+        
+        <div class="main-controls">
+            <button onclick="preloadAllSemesters()" class="btn-preload">Preload 8 Semester</button>
+            <button onclick="addEmptySemester()" class="btn-add-sem">Tambah Semester Custom</button>
+        </div>
+
+        <div id="semesterContainer"></div>
+
+        <div class="overall-result">
+            <button onclick="calculateOverallGPA()" class="btn-calc-total">
+                Hitung IPK Kumulatif
+            </button>
+
+            <h2 id="totalResult">IPK Total: 0.00</h2>
+
+            <p id="totalSKSCount">Total SKS Lulus: 0</p>
+
+            <a href="index.html" class="btn-secondary">Kembali ke Perhitungan IP Semester</a>
+        </div>
+    </div>
+
+    <script src="curriculum.js"></script>
+</body>
 </html>
